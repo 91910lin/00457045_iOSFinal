@@ -23,6 +23,11 @@
 		358B31CB22C0D2A400FC4FA9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 358B31BF22C0D2A400FC4FA9 /* icon.png */; };
 		358B31CC22C0D2A400FC4FA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358B31C122C0D2A400FC4FA9 /* ViewController.m */; };
 		358B31CE22C1FABB00FC4FA9 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B31CD22C1FABB00FC4FA9 /* ViewTwo.swift */; };
+		35B6F70622C22DEE00B233C6 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6F70522C22DEE00B233C6 /* GradeViewController.swift */; };
+		35B6F70822C2375900B233C6 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6F70722C2375900B233C6 /* GradeTableViewController.swift */; };
+		35B6F70A22C23A7E00B233C6 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6F70922C23A7E00B233C6 /* ScoreTableViewCell.swift */; };
+		35B6F70C22C24E2E00B233C6 /* daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6F70B22C24E2E00B233C6 /* daily.swift */; };
+		35B6F70E22C24F3600B233C6 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6F70D22C24F3500B233C6 /* postViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		358B31C022C0D2A400FC4FA9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		358B31C122C0D2A400FC4FA9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		358B31CD22C1FABB00FC4FA9 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
+		35B6F70522C22DEE00B233C6 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		35B6F70722C2375900B233C6 /* GradeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
+		35B6F70922C23A7E00B233C6 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		35B6F70B22C24E2E00B233C6 /* daily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = daily.swift; sourceTree = "<group>"; };
+		35B6F70D22C24F3500B233C6 /* postViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 				358B31BA22C0D2A300FC4FA9 /* CustomPoint.m */,
 				358B31B822C0D2A300FC4FA9 /* GreedySnakeView.h */,
 				358B31B422C0D2A300FC4FA9 /* GreedySnakeView.m */,
+				35B6F70D22C24F3500B233C6 /* postViewController.swift */,
 				358B31BD22C0D2A400FC4FA9 /* gu.mp3 */,
 				358B31BF22C0D2A400FC4FA9 /* icon.png */,
 				358B31BC22C0D2A300FC4FA9 /* pause.png */,
@@ -100,10 +111,14 @@
 				358B319F22C0CECE00FC4FA9 /* AppDelegate.swift */,
 				358B31A122C0CECE00FC4FA9 /* ViewController.swift */,
 				358B31A322C0CECE00FC4FA9 /* Main.storyboard */,
+				35B6F70722C2375900B233C6 /* GradeTableViewController.swift */,
+				35B6F70522C22DEE00B233C6 /* GradeViewController.swift */,
+				35B6F70922C23A7E00B233C6 /* ScoreTableViewCell.swift */,
 				358B31CD22C1FABB00FC4FA9 /* ViewTwo.swift */,
 				358B31A622C0CECF00FC4FA9 /* Assets.xcassets */,
 				358B31A822C0CECF00FC4FA9 /* LaunchScreen.storyboard */,
 				358B31AB22C0CECF00FC4FA9 /* Info.plist */,
+				35B6F70B22C24E2E00B233C6 /* daily.swift */,
 				358B31B122C0D2A200FC4FA9 /* 00457045_HW3-Bridging-Header.h */,
 			);
 			path = 00457045_HW3;
@@ -187,11 +202,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				358B31CC22C0D2A400FC4FA9 /* ViewController.m in Sources */,
+				35B6F70822C2375900B233C6 /* GradeTableViewController.swift in Sources */,
+				35B6F70622C22DEE00B233C6 /* GradeViewController.swift in Sources */,
 				358B31A222C0CECE00FC4FA9 /* ViewController.swift in Sources */,
 				358B31C322C0D2A400FC4FA9 /* GreedySnakeView.m in Sources */,
+				35B6F70A22C23A7E00B233C6 /* ScoreTableViewCell.swift in Sources */,
 				358B31C422C0D2A400FC4FA9 /* ReferenceViewController.m in Sources */,
 				358B31A022C0CECE00FC4FA9 /* AppDelegate.swift in Sources */,
+				35B6F70E22C24F3600B233C6 /* postViewController.swift in Sources */,
 				358B31CE22C1FABB00FC4FA9 /* ViewTwo.swift in Sources */,
+				35B6F70C22C24E2E00B233C6 /* daily.swift in Sources */,
 				358B31C622C0D2A400FC4FA9 /* AppDelegate.m in Sources */,
 				358B31C722C0D2A400FC4FA9 /* CustomPoint.m in Sources */,
 			);

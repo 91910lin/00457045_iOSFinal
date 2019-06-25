@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="96G-iy-h5W">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,6 +61,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yug-Oi-UnS"/>
                     <connections>
                         <outlet property="inputName" destination="3AK-RU-4wA" id="7dN-nJ-u5p"/>
                         <outlet property="timeLabel" destination="A0h-qp-Z31" id="Nvv-Wf-oAW"/>
@@ -68,12 +69,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759" y="139"/>
+            <point key="canvasLocation" x="1060.8695652173915" y="138.61607142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0mp-o3-iKi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mD9-hm-ajd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Fyh-gI-3Ii" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WnT-d4-p8X"/>
@@ -86,8 +86,9 @@
                         <viewLayoutGuide key="safeArea" id="4uj-Qp-VnA"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mD9-hm-ajd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="139"/>
+            <point key="canvasLocation" x="2747.826086956522" y="138.61607142857142"/>
         </scene>
         <!--View Two-->
         <scene sceneID="NkE-uo-O8U">
@@ -134,10 +135,267 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtR-6d-PtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="139"/>
+            <point key="canvasLocation" x="1931.8840579710147" y="138.61607142857142"/>
+        </scene>
+        <!--遊戲-->
+        <scene sceneID="Q03-yX-N0Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ys-vp-Imd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="遊戲" id="6nx-CA-tlp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KE6-xi-Hqf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jBi-46-hK2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcn-xY-FL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.72463768115944" y="138.61607142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dUw-f2-GC5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="96G-iy-h5W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M6g-17-xyn">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1ys-vp-Imd" kind="relationship" relationship="viewControllers" id="PN7-OW-Ip0"/>
+                        <segue destination="3da-nm-6IX" kind="relationship" relationship="viewControllers" id="iRM-RN-B4U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJ9-nj-5z6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.4202898550725" y="138.61607142857142"/>
+        </scene>
+        <!--排行-->
+        <scene sceneID="hKT-5U-c9F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3da-nm-6IX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="排行" id="60O-23-Lgy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KBv-WA-zFE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8vG-Pz-V39" kind="relationship" relationship="rootViewController" id="xko-Do-gS1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jS-cW-MSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3u0-iq-jFv">
+            <objects>
+                <viewController id="8vG-Pz-V39" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ex6-Eu-cEY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj7-EP-gjm">
+                                <rect key="frame" x="0.0" y="293" width="414" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="NYO-mL-vRM" kind="embed" id="1SI-61-Gvz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MeT-JN-zCR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cYo-lY-b6y">
+                        <barButtonItem key="rightBarButtonItem" title="＋新增" id="7Z9-i0-4wi">
+                            <color key="tintColor" red="1" green="0.38482521939999997" blue="0.60682520289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="1ww-Eu-Qhe" kind="show" id="pyR-C3-uJl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E10-SL-8B0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="854"/>
+        </scene>
+        <!--Daily View Controller-->
+        <scene sceneID="Lzm-dR-6y2">
+            <objects>
+                <viewController id="1ww-Eu-Qhe" customClass="dailyViewController" customModule="期末_天氣app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G2P-og-s7T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gx7-YD-J3P">
+                                <rect key="frame" x="0.0" y="146" width="375" height="477"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.50618151339999995" blue="0.65961838920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.38482521939999997" blue="0.60682520289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8jf-Y3-LGq">
+                                <rect key="frame" x="0.0" y="87" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.50618151339999995" blue="0.65961838920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.50618151339999995" blue="0.65961838920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2aS-Xe-hgi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xpi-eg-dbC">
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="pWe-km-l7x">
+                            <color key="tintColor" red="1" green="0.38482521939999997" blue="0.60682520289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="OPY-Ml-E3h" kind="unwind" unwindAction="unwindWithSegue:" id="84f-8v-Zdy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="completeButton" destination="pWe-km-l7x" id="l0D-WY-tgA"/>
+                        <outlet property="dailyTextView" destination="gx7-YD-J3P" id="iam-X6-hY6"/>
+                        <outlet property="dailyThemeText" destination="8jf-Y3-LGq" id="PSB-qd-YTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIM-Bx-yQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OPY-Ml-E3h" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="854"/>
+        </scene>
+        <!--心情小語-->
+        <scene sceneID="SOp-eM-vgS">
+            <objects>
+                <tableViewController id="NYO-mL-vRM" customClass="dailyTableViewController" customModule="期末_天氣app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="IKc-kB-SV7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.884975717" blue="0.84083905530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="1Tw-29-9LY" detailTextLabel="Yhb-oa-Xiq" rowHeight="95" style="IBUITableViewCellStyleSubtitle" id="e3o-pf-6az" customClass="dailyTableViewCell" customModule="期末_天氣app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e3o-pf-6az" id="jQP-CL-y4G">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Tw-29-9LY">
+                                            <rect key="frame" x="20" y="27" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.17122856559999999" blue="0.47511867359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yhb-oa-Xiq">
+                                            <rect key="frame" x="20" y="50.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="1" green="0.17122856559999999" blue="0.47511867359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.92436403119999999" blue="0.91350792250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dailyDetail" destination="Yhb-oa-Xiq" id="3LO-be-xks"/>
+                                    <outlet property="dailyTitle" destination="1Tw-29-9LY" id="uWU-Ju-u5x"/>
+                                    <segue destination="OWF-9Z-wRY" kind="show" id="Vpj-jZ-6jH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NYO-mL-vRM" id="MhO-Fh-TxS"/>
+                            <outlet property="delegate" destination="NYO-mL-vRM" id="M9w-Wh-qtQ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="心情小語" id="bQM-wx-TLV"/>
+                    <connections>
+                        <outlet property="selectTableView" destination="IKc-kB-SV7" id="8C4-xH-Bpx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCm-NJ-8wB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="1602"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="jWW-qC-QDT">
+            <objects>
+                <viewController id="OWF-9Z-wRY" customClass="postViewController" customModule="期末_天氣app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLa-bv-Jb2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyt-h3-QNQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.92436403119999999" blue="0.91350792250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.37293941819999998" blue="0.45925187989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-4u-9Ru">
+                                <rect key="frame" x="0.0" y="134" width="375" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.38482521939999997" blue="0.60682520289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0vb-oI-KPo"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="66D-d4-xbn"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label1" destination="dyt-h3-QNQ" id="uQ2-od-UEy"/>
+                        <outlet property="text2" destination="Wvi-4u-9Ru" id="O4H-Fi-lRa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2Q-xJ-DPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="1601"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BhR-b4-yVk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ule-kq-dfG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gHe-vf-9kw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OWF-9Z-wRY" kind="relationship" relationship="rootViewController" id="VI7-Mm-K2G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TfD-N8-tNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="2264"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon.png" width="2633.142822265625" height="2633.142822265625"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vpj-jZ-6jH"/>
+    </inferredMetricsTieBreakers>
 </document>

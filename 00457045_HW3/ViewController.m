@@ -17,9 +17,10 @@
 
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height+50;
     CGFloat gap = (screenWidth - WIDTH * POINT_SIZE)/2;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(gap, 30, screenWidth - 3*gap - 40, 40)];
+    //UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(gap, 30, screenWidth - 3*gap - 40, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(gap, 90, screenWidth - 3*gap - 40, 40)];
     label.font = [UIFont systemFontOfSize:30 weight:UIFontWeightThin];
     label.textColor = [UIColor colorWithRed:153/255. green:153/255. blue:153/255. alpha:1];
     label.text = @"貪吃蛇";
@@ -33,13 +34,14 @@
     
     
     psBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    psBtn.frame = CGRectMake(screenWidth - 35 - gap, 32.5, 35, 35);
+    //psBtn.frame = CGRectMake(screenWidth - 35 - gap, 32.5, 35, 35);
+    psBtn.frame = CGRectMake(screenWidth  -35- gap, 90, 35, 35);
     [psBtn setImage:[UIImage imageNamed:@"pause.png"] forState:(UIControlStateNormal)];
     [psBtn setImage:[UIImage imageNamed:@"start.png"] forState:(UIControlStateSelected)];
     [psBtn addTarget:self action:@selector(pauseAndStartAction:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:psBtn];
     
-    _snakeView = [[GreedySnakeView alloc] initWithFrame:CGRectMake(gap, screenHeight - gap - HEIGHT * POINT_SIZE,WIDTH *POINT_SIZE , HEIGHT *POINT_SIZE)];
+    _snakeView = [[GreedySnakeView alloc] initWithFrame:CGRectMake(gap, screenHeight - gap - HEIGHT * POINT_SIZE,WIDTH *POINT_SIZE , HEIGHT *POINT_SIZE-120)];
     
     _snakeView.layer.borderWidth = 3;
     _snakeView.layer.borderColor = [[UIColor colorWithRed:153/255. green:153/255. blue:153/255. alpha:1] CGColor];
