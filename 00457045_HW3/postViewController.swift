@@ -1,23 +1,15 @@
-//
-//  postViewController.swift
-//  期末-天氣app
-//
-//  Created by User02 on 2019/6/22.
-//  Copyright © 2019 00657123. All rights reserved.
-//
-
 import UIKit
 
 class postViewController: UIViewController {
-    var select:Daily?
+    var select:Score?
     @IBOutlet var label1: UILabel!
     
 
     @IBOutlet var text2: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        label1.text=select?.theme
-        text2.text=select?.dailytext
+        label1.text=select?.score
+        text2.text=select?.name
         // Do any additional setup after loading the view.
     }
     
