@@ -162,6 +162,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="96G-iy-h5W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M6g-17-xyn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -308,7 +309,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dailyDetail" destination="Yhb-oa-Xiq" id="3LO-be-xks"/>
-                                    <outlet property="dailyTitle" destination="1Tw-29-9LY" id="uWU-Ju-u5x"/>
+                                    <outlet property="dailyTitle" destination="1Tw-29-9LY" id="mdC-su-hl9"/>
                                     <segue destination="OWF-9Z-wRY" kind="show" id="Vpj-jZ-6jH"/>
                                 </connections>
                             </tableViewCell>
